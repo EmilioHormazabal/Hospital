@@ -1,9 +1,10 @@
 package com.duoc.hospital.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
 
 import java.util.Date;
 import java.util.List;
@@ -13,14 +14,12 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-
 public class Medico {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private int id;
 
-    @Column(nullable = true, length = 12)
+    @Column(nullable = false, length = 12, unique = true)
     private String run;
 
     @Column(nullable = false, length = 50)
@@ -32,19 +31,20 @@ public class Medico {
     @Column(nullable = false)
     private Date fecha_contrato;
 
-    @Column(nullable = false, length = 10)
-    private int sueldo_base;
+    @Column(name = "sueldo_base", nullable = false, length = 10)
+    private int sueldoBase;
 
     @Column(nullable = false, length = 100, unique = true)
     private String correo;
 
-    @Column(nullable = false, length = 20)
+    @Column(nullable = false, length = 20, unique = true)
     private String telefono;
 
-    @Column(nullable = true, length = 20)
-    private String especialidad;
-
-    @OneToMany (mappedBy = "medico")
+    @OneToMany(mappedBy = "medico")
+    @JsonIgnore
     private List<Atencion> atenciones;
 
+    @ManyToOne
+    @JoinColumn(name = "id_especialidad", nullable = false)
+    private Especialidad especialidadMedico; // Relación correcta con Especialidad
 }

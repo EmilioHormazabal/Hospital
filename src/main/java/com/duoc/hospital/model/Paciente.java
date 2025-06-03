@@ -1,5 +1,6 @@
 package com.duoc.hospital.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -19,7 +20,7 @@ public class Paciente {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(unique = true, length = 12, nullable = false)
+    @Column(nullable = false, unique = true, length = 12)
     private String run;
 
     @Column(nullable = false, length = 50)
@@ -31,16 +32,17 @@ public class Paciente {
     @Column(nullable = false)
     private Date fechaNacimiento;
 
-    @Column(nullable = false,length = 100)
+    @Column(unique = true, nullable = false,length = 100)
     private String correo;
 
-    @Column(nullable = false, length = 20)
+    @Column(unique = true, nullable = false, length = 20)
     private String telefono;
 
-    @Column(nullable = false, length = 20)
-    private String prevision;
-
     @OneToMany(mappedBy = "paciente")
+    @JsonIgnore
     private List<Atencion> atenciones;
 
+    @ManyToOne
+    @JoinColumn(name = "prevision", nullable = false)
+    private Prevision prevision;
 }

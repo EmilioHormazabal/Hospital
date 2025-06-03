@@ -5,8 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.Date;
 
 @Entity
 @Data
@@ -18,11 +18,11 @@ public class Atencion {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(nullable = false)
-    private LocalDate fecha_atencion;
+    @Column(name = "fecha_atencion", nullable = false)
+    private Date fechaAtencion;
 
-    @Column(nullable = false)
-    private LocalTime hora_inicio;
+    @Column(name = "hora_inicio", nullable = false)
+    private LocalTime horaInicio;
 
     @Column(columnDefinition = "integer default 0", length = 10)
     private int costo;
