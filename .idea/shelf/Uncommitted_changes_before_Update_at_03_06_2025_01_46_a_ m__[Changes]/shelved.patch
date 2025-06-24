@@ -1,0 +1,20 @@
+Index: hospital/hospital.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module version=\"4\">\r\n  <component name=\"FacetManager\">\r\n    <facet type=\"jpa\" name=\"JPA\">\r\n      <configuration>\r\n        <setting name=\"validation-enabled\" value=\"true\" />\r\n        <setting name=\"provider-name\" value=\"Hibernate\" />\r\n        <datasource-mapping>\r\n          <factory-entry name=\"entityManagerFactory\" />\r\n        </datasource-mapping>\r\n        <naming-strategy-map />\r\n      </configuration>\r\n    </facet>\r\n  </component>\r\n</module>
+===================================================================
+diff --git a/hospital/hospital.iml b/hospital/hospital.iml
+--- a/hospital/hospital.iml	(revision 779356f5ec3e537b9b41e9893193e721b011e46d)
++++ b/hospital/hospital.iml	(date 1748920107020)
+@@ -4,10 +4,7 @@
+     <facet type="jpa" name="JPA">
+       <configuration>
+         <setting name="validation-enabled" value="true" />
+-        <setting name="provider-name" value="Hibernate" />
+-        <datasource-mapping>
+-          <factory-entry name="entityManagerFactory" />
+-        </datasource-mapping>
++        <datasource-mapping />
+         <naming-strategy-map />
+       </configuration>
+     </facet>

@@ -1,7 +1,10 @@
+// src/main/java/com/duoc/hospital/controller/AtencionController.java
 package com.duoc.hospital.controller;
 
 import com.duoc.hospital.model.Atencion;
 import com.duoc.hospital.service.AtencionService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,84 +16,67 @@ import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
-// Controlador para gestionar las atenciones médicas
 @RestController
-@RequestMapping("/api/v1/atenciones")
+@RequestMapping("api/v1/atenciones")
+@Tag(name = "Atenciones", description = "Operaciones relacionadas con las atenciones medicas")
 public class AtencionController {
 
-    // Inyección del servicio de atenciones
     @Autowired
-    private AtencionService atencionservice;
+    private AtencionService atencionService;
 
-    // Formato de fecha para parsear strings a Date
     private final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
-    // Devuelve todas las atenciones registradas
     @GetMapping
-    public ResponseEntity<List<Atencion>> listar() {
-        List<Atencion> atenciones = atencionservice.findAll();
+    @Operation(summary = "Obtener todas las atenciones", description = "Devuelve la lista de todas las atenciones registradas")
+    public ResponseEntity<List<Atencion>> getAll() {
+        List<Atencion> atenciones = atencionService.findAll();
         if (atenciones.isEmpty()) {
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+            return ResponseEntity.noContent().build();
         }
         return ResponseEntity.ok(atenciones);
     }
 
-    // Busca una atención por su identificador único
     @GetMapping("/{id}")
-    public ResponseEntity<Atencion> buscar(@PathVariable Integer id) {
-        Optional<Atencion> atencion = atencionservice.findById(id);
-        return atencion.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
+    @Operation(summary = "Obtener atención por ID", description = "Devuelve la atención especificada por su identificador")
+    public ResponseEntity<Optional<Atencion>> getById(@PathVariable Integer id) {
+        return ResponseEntity.ok(atencionService.findById(id));
     }
 
-    // Guarda una nueva atención médica
     @PostMapping
-    public ResponseEntity<Atencion> guardar(@RequestBody Atencion atencion) {
-        Atencion newAtencion = atencionservice.save(atencion);
-        return ResponseEntity.status(HttpStatus.CREATED).body(newAtencion);
+    @Operation(summary = "Crear nueva atención", description = "Registra una nueva atención médica en el sistema")
+    public ResponseEntity<Atencion> create(@RequestBody Atencion atencion) {
+        Atencion saved = atencionService.save(atencion);
+        return ResponseEntity.status(HttpStatus.CREATED).body(saved);
     }
 
-    // Busca atenciones por una fecha específica (formato yyyy-MM-dd)
     @GetMapping("/fecha/{fecha}")
-    public ResponseEntity<List<Atencion>> buscarPorFecha(@PathVariable String fecha) {
+    @Operation(summary = "Buscar atenciones por fecha", description = "Obtiene atenciones de una fecha específica (yyyy-MM-dd)")
+    public ResponseEntity<List<Atencion>> findByFecha(@PathVariable String fecha) {
         try {
-            Date fechaDate = dateFormat.parse(fecha);
-            List<Atencion> atenciones = atencionservice.findByFecha(fechaDate);
-            if (atenciones.isEmpty()) {
-                return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+            Date date = dateFormat.parse(fecha);
+            List<Atencion> result = atencionService.findByFecha(date);
+            if (result.isEmpty()) {
+                return ResponseEntity.noContent().build();
             }
-            return ResponseEntity.ok(atenciones);
+            return ResponseEntity.ok(result);
         } catch (ParseException e) {
-            // Si la fecha no tiene el formato correcto
-            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            return ResponseEntity.badRequest().build();
         }
     }
 
-    // Busca atenciones entre dos fechas dadas (incluye todo el día final)
     @GetMapping("/fecha")
-    public ResponseEntity<List<Atencion>> buscarEntreFechas(
-            @RequestParam String desde,
-            @RequestParam String hasta) {
+    @Operation(summary = "Buscar atenciones entre fechas", description = "Obtiene atenciones entre dos fechas dadas (yyyy-MM-dd)")
+    public ResponseEntity<List<Atencion>> findBetween(@RequestParam String desde, @RequestParam String hasta) {
         try {
-            Date desdeDate = dateFormat.parse(desde);
-            Date hastaDate = dateFormat.parse(hasta);
-
-            // Ajusta la fecha final para incluir todo el día
-            java.util.Calendar cal = java.util.Calendar.getInstance();
-            cal.setTime(hastaDate);
-            cal.set(java.util.Calendar.HOUR_OF_DAY, 23);
-            cal.set(java.util.Calendar.MINUTE, 59);
-            cal.set(java.util.Calendar.SECOND, 59);
-            cal.set(java.util.Calendar.MILLISECOND, 999);
-            Date hastaFin = cal.getTime();
-
-            List<Atencion> atenciones = atencionservice.findByFechaBetween(desdeDate, hastaFin);
-            if (atenciones.isEmpty()) {
-                return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+            Date d1 = dateFormat.parse(desde);
+            Date d2 = dateFormat.parse(hasta);
+            List<Atencion> result = atencionService.findByFechaBetween(d1, d2);
+            if (result.isEmpty()) {
+                return ResponseEntity.noContent().build();
             }
-            return ResponseEntity.ok(atenciones);
+            return ResponseEntity.ok(result);
         } catch (ParseException e) {
-            // Si alguna fecha no tiene el formato correcto
-            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            return ResponseEntity.badRequest().build();
         }
     }
 }

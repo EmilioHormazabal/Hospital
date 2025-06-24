@@ -6,6 +6,9 @@ import com.duoc.hospital.repository.PacienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -83,27 +86,35 @@ public class PacienteService {
         return pacienteRepository.findByRun(run);
     }
 
-    // Buscar pacientes menores de cierta edad (nombre original)
+    // Buscar pacientes menores de cierta edad
     public List<Paciente> findMenoresDe(int edad) {
-        return pacienteRepository.findMenoresDe(edad);
+        Date fechaLimite = calcularFechaLimite(edad);
+        return pacienteRepository.findMenoresDe(fechaLimite);
     }
 
-    // Buscar pacientes mayores de cierta edad (nombre original)
+    // Buscar pacientes mayores de cierta edad
     public List<Paciente> findMayoresDe(int edad) {
-        return pacienteRepository.findMayoresDe(edad);
+        Date fechaLimite = calcularFechaLimite(edad);
+        return pacienteRepository.findMayoresDe(fechaLimite);
     }
 
     // Métodos agregados para compatibilidad con el controller
     public List<Paciente> findMenoresDeEdad(int edad) {
-        return pacienteRepository.findMenoresDe(edad);
+        return findMenoresDe(edad);
     }
 
     public List<Paciente> findMayoresDeEdad(int edad) {
-        return pacienteRepository.findMayoresDe(edad);
+        return findMayoresDe(edad);
     }
 
     // Buscar pacientes por especialidad
     public List<Paciente> findByEspecialidadNombre(String nombreEspecialidad) {
         return pacienteRepository.findByEspecialidadNombre(nombreEspecialidad);
+    }
+
+    // Utilidad para calcular la fecha límite según la edad
+    private Date calcularFechaLimite(int edad) {
+        LocalDate fechaLimite = LocalDate.now().minusYears(edad);
+        return Date.from(fechaLimite.atStartOfDay(ZoneId.systemDefault()).toInstant());
     }
 }

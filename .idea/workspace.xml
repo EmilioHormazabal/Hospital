@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="65512605-2232-46a9-817d-65a6d81046a5" name="Changes" comment="fixup! Add files via upload">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/e458031e-edc0-4c20-916b-36d72b9b3822.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/e458031e-edc0-4c20-916b-36d72b9b3822/storage_v2/_src_/database/HOSPITAL.Ou6MHA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/e458031e-edc0-4c20-916b-36d72b9b3822/storage_v2/_src_/database/HOSPITAL.Ou6MHA/schema/INFORMATION_SCHEMA.NBgcMw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/e458031e-edc0-4c20-916b-36d72b9b3822/storage_v2/_src_/database/HOSPITAL.Ou6MHA/schema/dbo.sYMBAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/e458031e-edc0-4c20-916b-36d72b9b3822/storage_v2/_src_/database/HOSPITAL.Ou6MHA/schema/dbo.sYMBAA.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/e458031e-edc0-4c20-916b-36d72b9b3822/storage_v2/_src_/database/HOSPITAL.Ou6MHA/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_06_2025_01_46_a_ m__[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/config/UserDetailsServiceConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/AtencionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/AtencionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/EspecialidadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/EspecialidadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/EstadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/EstadoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/MedicoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/MedicoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/PacienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/PacienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/PrevisionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/PrevisionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/repository/PacienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/repository/PacienteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/security/SecurityApiKeyFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/security/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/service/PacienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/service/PacienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoc/hospital/config/UserDetailsServiceConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoc/hospital/controller/AtencionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoc/hospital/controller/AtencionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoc/hospital/controller/EspecialidadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoc/hospital/controller/EspecialidadController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoc/hospital/controller/EstadoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoc/hospital/controller/EstadoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoc/hospital/controller/MedicoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoc/hospital/controller/MedicoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoc/hospital/controller/PacienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoc/hospital/controller/PacienteController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoc/hospital/controller/PrevisionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoc/hospital/controller/PrevisionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoc/hospital/repository/PacienteRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoc/hospital/repository/PacienteRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoc/hospital/security/SecurityApiKeyFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoc/hospital/security/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoc/hospital/service/PacienteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoc/hospital/service/PacienteService.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/Fullstack" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;EmilioHormazabal&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/EmilioHormazabal/Hospital.git&quot;,
+    &quot;accountId&quot;: &quot;44863c70-35c8-4028-b2a9-bbf830980317&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2xcmHAsTptCayp9056UI1nrbwRH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.HospitalApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#1 on Fullstack&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.build.tools.auto.reload&quot;: &quot;ALL&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver&quot;
+    ]
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Hospital" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Hospital" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration name="HospitalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-23" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="hospital" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.duoc.hospital.HospitalApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26094.121" />
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-IU-251.26094.121" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="65512605-2232-46a9-817d-65a6d81046a5" name="Changes" comment="" />
+      <created>1748245645994</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748245645994</updated>
+      <workItem from="1748245648258" duration="54000" />
+      <workItem from="1748245747019" duration="1517000" />
+      <workItem from="1748323934040" duration="1703000" />
+      <workItem from="1748396993153" duration="5977000" />
+      <workItem from="1748561044287" duration="20232000" />
+      <workItem from="1748582620976" duration="5153000" />
+      <workItem from="1748587816956" duration="1468000" />
+      <workItem from="1748589310389" duration="2351000" />
+      <workItem from="1748591679767" duration="10607000" />
+      <workItem from="1748918924139" duration="136000" />
+      <workItem from="1748919076333" duration="1268000" />
+      <workItem from="1748920370093" duration="598000" />
+      <workItem from="1748922404079" duration="2448000" />
+      <workItem from="1749161422857" duration="3747000" />
+      <workItem from="1749177145993" duration="550000" />
+      <workItem from="1749177712301" duration="69000" />
+      <workItem from="1749177901649" duration="1043000" />
+      <workItem from="1749179186964" duration="578000" />
+      <workItem from="1750784733443" duration="4058000" />
+      <workItem from="1750788949760" duration="4966000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
