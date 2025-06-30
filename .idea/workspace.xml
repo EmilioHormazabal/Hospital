@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65512605-2232-46a9-817d-65a6d81046a5" name="Changes" comment="Entrega prueba N3 FullStack: documentación Swagger, pruebas unitarias, configuración completa y soporte opcional para Docker.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-    </list>
+    <list default="true" id="65512605-2232-46a9-817d-65a6d81046a5" name="Changes" comment="Entrega prueba N3 FullStack: documentación Swagger, pruebas unitarias, configuración completa y soporte opcional para Docker." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -240,7 +237,7 @@
       <workItem from="1751258562961" duration="269000" />
       <workItem from="1751258860917" duration="527000" />
       <workItem from="1751261101641" duration="796000" />
-      <workItem from="1751261935084" duration="10502000" />
+      <workItem from="1751261935084" duration="10887000" />
     </task>
     <task id="LOCAL-00001" summary="Modificaciones actuales de proyecto Hospital, se ha integrado Swagger, documentacion api, etc.">
       <option name="closed" value="true" />
@@ -314,7 +311,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751275394644</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Entrega prueba N3 FullStack: documentación Swagger, pruebas unitarias, configuración completa y soporte opcional para Docker.">
+      <option name="closed" value="true" />
+      <created>1751276390387</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1751276390387</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
