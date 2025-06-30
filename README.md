@@ -1,78 +1,103 @@
-# Hospital V&M
+# Hospital V&M - API REST
 
-API REST para la gestión hospitalaria desarrollada en Java con Spring Boot y Maven. Permite administrar pacientes, médicos, atenciones, especialidades, previsiones y estados.
+API para gestión hospitalaria desarrollada en Java con Spring Boot 3.5.0 y Maven. Permite administrar pacientes, médicos, atenciones, especialidades, previsiones y estados.
 
 ## Tecnologías utilizadas
-
 - Java 21
-- Spring Boot 3.4.5
+- Spring Boot 3.5.0
 - Maven
 - JPA/Hibernate
-- SQL Server
+- MySQL
+- Swagger/OpenAPI 3.0
 
 ## Requisitos previos
-
 - Java 21 instalado
 - Maven instalado
-- SQL Server en ejecución y accesible
+- MySQL 8.x en ejecución
 - IDE recomendado: IntelliJ IDEA
 
 ## Configuración inicial
+1. Clona el repositorio:
 
-1. **Clona el repositorio:**
-   ```bash
-   git clone <URL_DEL_REPOSITORIO>
-   cd hospital
+   git clone https://github.com/EmilioHormazabal/Hospital.git
+   cd Hospital
 
-Configura la base de datos:
+2. Configura la base de datos:
 
+- Crea una base de datos llamada `hospital` en MySQL
+- Configura las credenciales en `src/main/resources/application.properties`:
 
-Crea una base de datos llamada Hospital en SQL Server.
-Crea el usuario y otorga permisos si es necesario.
-Edita el archivo src/main/resources/application.properties con tus credenciales y URL de conexión:
-spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=Hospital;encrypt=true;trustServerCertificate=true;
-spring.datasource.username=DUOC_USER
-spring.datasource.password=Duocadmin25
-Compila y ejecuta la aplicación:
+spring.datasource.url=jdbc:mysql://localhost:3306/hospital
+spring.datasource.username=tu_usuario
+spring.datasource.password=tu_contraseña
 
 
-Desde terminal:
-mvn clean install
+3. Ejecuta la aplicación:
+
 mvn spring-boot:run
-O desde IntelliJ ejecutando la clase HospitalApplication.
-Endpoints principales
-/api/v1/pacientes
-CRUD y búsquedas de pacientes (por nombre, apellido, run, previsión, especialidad, edad).
-/api/v1/medicos
-CRUD y búsquedas de médicos (por especialidad, sueldo total, etc).
-/api/v1/atenciones
-CRUD y consultas de atenciones (por fecha, rango, costo, médico, paciente, estado, ganancia total).
-/api/v1/especialidades
-CRUD y listado de especialidades médicas.
-/api/v1/previsiones
-CRUD y listado de previsiones.
-/api/v1/Estados
-CRUD y listado de estados de atención.
-Ejemplo de uso
-Para consumir la API desde Postman o cualquier cliente HTTP, agrega el header:
 
-Content-Type: application/json
 
-Ejemplo de petición
-Listar pacientes:
-GET http://localhost:8080/api/v1/pacientes
-Crear un médico:
-POST http://localhost:8080/api/v1/medicos
-Body: { ... }
-Notas importantes
-Las fechas se manejan en UTC en la base de datos. Si necesitas mostrar la hora local de Chile, convierte en el frontend usando la zona horaria America/Santiago.
-El sistema valida unicidad de RUN, correo y teléfono para pacientes y médicos.
-Solo se aceptan previsiones FONASA o ISAPRE para pacientes.
-El sistema crea y elimina las tablas automáticamente al iniciar/detener la app (spring.jpa.hibernate.ddl-auto=create-drop).
-Estructura del proyecto
-model/ — Entidades JPA
-repository/ — Repositorios Spring Data JPA
-service/ — Lógica de negocio
-controller/ — Endpoints REST
-Contacto emi.hormazabal@duocuc.cl
-Para dudas o soporte, contacta a los desarrolladores del proyecto (Emilio Hormazabal, Ing en Informatica 2do Año).
+## Documentación de la API
+Accede a la documentación interactiva Swagger UI:
+
+http://localhost:8080/swagger-ui.html 
+o 
+http://TuIPV4:8080/swagger-ui/index.html
+
+(Lo puedes saber escribiendo en tu terminal favorita, en mi caso PowerShell: ipconfig).
+
+## Endpoints principales
+| Módulo         | Endpoint                     | Funcionalidades |
+|----------------|------------------------------|-----------------|
+| Pacientes      | `/api/v1/pacientes`          | CRUD, reportes por edad/previsión |
+| Médicos        | `/api/v1/medicos`            | CRUD, reportes por especialidad |
+| Atenciones     | `/api/v1/atenciones`         | CRUD, reportes por fecha/estado |
+| Reportes       | `/api/v1/pacientes/reportes` | Pacientes mayores/menores de edad |
+|                | `/api/v1/atenciones/fecha`   | Atenciones por fecha o rango |
+
+## Ejemplos de uso
+Crear un paciente:
+
+POST /api/v1/pacientes
+{
+"run": "12345678-9",
+"nombre": "Juan",
+"apellido": "Pérez",
+"fechaNacimiento": "1990-01-01",
+"correo": "juan@mail.com",
+"telefono": "+56912345678",
+"prevision": {"id": 1}
+}
+
+
+Obtener atenciones entre fechas:
+
+GET /api/v1/atenciones/fecha?desde=2025-01-01&hasta=2025-12-31
+
+
+## Características clave
+- ✅ Documentación completa con Swagger
+- ✅ Validación de datos (unicidad de RUN, correo, teléfono)
+- ✅ Manejo de zonas horarias (UTC/Chile)
+- ✅ Pruebas unitarias para todos los controladores
+- ✅ Inicialización automática de datos esenciales
+- ✅ Soporte para previsiones FONASA e ISAPRE
+
+## Estructura del proyecto
+
+src/
+├── main/
+│ ├── java/
+│ │ ├── controller/ # Controladores REST
+│ │ ├── model/ # Entidades JPA
+│ │ ├── repository/ # Repositorios Spring Data
+│ │ ├── service/ # Lógica de negocio
+│ │ └── config/ # Configuración Swagger e inicialización
+│ └── resources/ # Archivos de configuración
+└── test/ # Pruebas unitarias.
+
+
+## Contacto
+- **Desarrollador**: Emilio Hormazabal - Ingeniería en Informática
+- **Email**: emi.hormazabal@duocuc.cl
+- **Repositorio**: [https://github.com/EmilioHormazabal/Hospital](https://github.com/EmilioHormazabal/Hospital)

@@ -117,4 +117,19 @@ public class PacienteService {
         LocalDate fechaLimite = LocalDate.now().minusYears(edad);
         return Date.from(fechaLimite.atStartOfDay(ZoneId.systemDefault()).toInstant());
     }
+    public Optional<Paciente> update(int id, Paciente pacienteActualizado) {
+        return pacienteRepository.findById(id)
+                .map(pacienteExistente -> {
+                    // Valida que los datos únicos no se repitan con OTROS pacientes
+                    pacienteRepository.findByRun(pacienteActualizado.getRun()).ifPresent(p -> {
+                        if (p.getId() != id) throw new IllegalArgumentException("El RUN ya está en uso por otro paciente.");
+                    });
+                    pacienteRepository.findByCorreo(pacienteActualizado.getCorreo()).ifPresent(p -> {
+                        if (p.getId() != id) throw new IllegalArgumentException("El correo ya está en uso por otro paciente.");
+                    });
+
+                    pacienteActualizado.setId(id); // Asegura que se actualice el registro correcto
+                    return pacienteRepository.save(pacienteActualizado);
+                });
+    }
 }

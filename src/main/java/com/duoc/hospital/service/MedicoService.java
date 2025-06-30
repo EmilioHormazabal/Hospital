@@ -115,4 +115,20 @@ public class MedicoService {
     public List<Medico> findByEspecialidad(String nombreEspecialidad) {
         return medicoRepository.findByEspecialidadNombre(nombreEspecialidad);
     }
+    public Optional<Medico> update(int id, Medico medicoActualizado) {
+        return medicoRepository.findById(id)
+                .map(medicoExistente -> {
+                    // Valida que los datos únicos no se repitan con OTROS médicos
+                    medicoRepository.findByRun(medicoActualizado.getRun()).ifPresent(m -> {
+                        if (m.getId() != id) throw new IllegalArgumentException("El RUN ya está en uso por otro médico.");
+                    });
+                    medicoRepository.findByCorreo(medicoActualizado.getCorreo()).ifPresent(m -> {
+                        if (m.getId() != id) throw new IllegalArgumentException("El correo ya está en uso por otro médico.");
+                    });
+
+                    medicoActualizado.setId(id);
+                    return medicoRepository.save(medicoActualizado);
+                });
+    }
+
 }

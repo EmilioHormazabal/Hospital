@@ -141,4 +141,13 @@ public class AtencionService {
                 })
                 .sum());
     }
+    // Agrega este método a tu clase AtencionService
+    public Optional<Atencion> update(int id, Atencion atencionActualizada) {
+        return atencionRepository.findById(id)
+                .map(atencionExistente -> {
+                    atencionActualizada.setId(id);
+                    // Aquí puedes añadir la lógica para cargar Medico y Paciente si es necesario
+                    return atencionRepository.save(atencionActualizada);
+                });
+    }
 }
