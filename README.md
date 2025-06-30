@@ -48,12 +48,12 @@ mvn spring-boot:run
 ### Pasos para levantar todo el sistema
 1. **Clona este repositorio:**
 
-git clone https://github.com/EmilioHormazabal/Hospital.git
-cd Hospital
+`git clone https://github.com/EmilioHormazabal/Hospital.git`
+`cd Hospital`
 
 2. **Ejecuta en la terminal:**
 
-docker compose up --build
+`docker compose up --build`
 
 - Esto descargará las imágenes necesarias, construirá la app y levantará la base de datos MySQL y la API automáticamente.
 - Espera a ver en los logs que la aplicación está corriendo en el puerto 8080.
@@ -64,7 +64,7 @@ docker compose up --build
 
 4. **Para detener los contenedores:**
 
-docker compose down
+`docker compose down`
 
 
 #### Notas importantes
@@ -79,7 +79,7 @@ docker compose down
 Accede a la documentación interactiva Swagger UI:
 
 - [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
-- o [http://TuIPV4:8080/swagger-ui/index.html](http://TuIPV4:8080/swagger-ui/index.html)
+- [http://TuIPV4:8080/swagger-ui/index.html](http://TuIPV4:8080/swagger-ui/index.html)
 
 (Para saber tu IP, puedes usar: `ipconfig` en PowerShell o CMD).
 
@@ -107,7 +107,7 @@ POST /api/v1/pacientes
 "nombre": "Juan",
 "apellido": "Pérez",
 "fechaNacimiento": "1990-01-01",
-"correo": "juan@mail.com",
+"correo": "juan@gmail.com",
 "telefono": "+56912345678",
 "prevision": {"id": 1}
 }
