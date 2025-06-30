@@ -101,7 +101,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.HospitalApplication">
+  <component name="RunManager" selected="JUnit.hospital in hospital">
     <configuration name="AtencionControllerTest.testFindByEstado_NoContent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hospital" />
       <extension name="coverage">
@@ -186,10 +186,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.hospital in hospital" />
         <item itemvalue="JUnit.java in hospital" />
         <item itemvalue="JUnit.HospitalApplicationTests" />
         <item itemvalue="JUnit.MedicoControllerTest" />
-        <item itemvalue="JUnit.hospital in hospital" />
         <item itemvalue="JUnit.AtencionControllerTest.testFindByEstado_NoContent" />
       </list>
     </recent_temporary>
@@ -237,7 +237,7 @@
       <workItem from="1751258562961" duration="269000" />
       <workItem from="1751258860917" duration="527000" />
       <workItem from="1751261101641" duration="796000" />
-      <workItem from="1751261935084" duration="10887000" />
+      <workItem from="1751261935084" duration="11189000" />
     </task>
     <task id="LOCAL-00001" summary="Modificaciones actuales de proyecto Hospital, se ha integrado Swagger, documentacion api, etc.">
       <option name="closed" value="true" />
@@ -319,7 +319,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751276390387</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Entrega prueba N3 FullStack: documentación Swagger, pruebas unitarias, configuración completa y soporte opcional para Docker.">
+      <option name="closed" value="true" />
+      <created>1751276401599</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1751276401599</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
