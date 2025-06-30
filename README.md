@@ -100,4 +100,4 @@ src/
 ## Contacto
 - **Desarrollador**: Emilio Hormazabal - Ingeniería en Informática
 - **Email**: emi.hormazabal@duocuc.cl
-- **Repositorio**: [https://github.com/EmilioHormazabal/Hospital](https://github.com/EmilioHormazabal/Hospital)
+- **Repositorio**: [https://github.com/EmilioHormazabal/Hospital](https://github.com/EmilioHormazabal/Hospital).
