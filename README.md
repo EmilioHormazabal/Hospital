@@ -107,7 +107,7 @@ POST /api/v1/pacientes
 "nombre": "Juan",
 "apellido": "Pérez",
 "fechaNacimiento": "1990-01-01",
-"correo": "juan@mail.com",
+"correo": "juan@gmail.com",
 "telefono": "+56912345678",
 "prevision": {"id": 1}
 }
