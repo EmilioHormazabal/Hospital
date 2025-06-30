@@ -19,8 +19,8 @@ API para gestión hospitalaria desarrollada en Java con Spring Boot 3.5.0 y Mave
 ## Configuración inicial
 1. Clona el repositorio:
 
-   git clone https://github.com/EmilioHormazabal/Hospital.git
-   cd Hospital
+- git clone https://github.com/EmilioHormazabal/Hospital.git
+- cd Hospital
 
 2. Configura la base de datos:
 
