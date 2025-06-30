@@ -48,12 +48,12 @@ mvn spring-boot:run
 ### Pasos para levantar todo el sistema
 1. **Clona este repositorio:**
 
-git clone https://github.com/EmilioHormazabal/Hospital.git
-cd Hospital
+`git clone https://github.com/EmilioHormazabal/Hospital.git`
+`cd Hospital`
 
 2. **Ejecuta en la terminal:**
 
-docker compose up --build
+`docker compose up --build`
 
 - Esto descargará las imágenes necesarias, construirá la app y levantará la base de datos MySQL y la API automáticamente.
 - Espera a ver en los logs que la aplicación está corriendo en el puerto 8080.
@@ -64,7 +64,7 @@ docker compose up --build
 
 4. **Para detener los contenedores:**
 
-docker compose down
+`docker compose down`
 
 
 #### Notas importantes
