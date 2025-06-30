@@ -1,5 +1,6 @@
 package com.duoc.hospital.config;
 
+import io.swagger.v3.oas.models.ExternalDocumentation;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
@@ -12,14 +13,25 @@ public class SwaggerConfig {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("API Hospital Duoc UC")
-                        .version("1.0")
-                        .description("Documentación de la API para gestión de atenciones médicas en el Hospital V&M.")
+                        .title("API Hospital V&M")
+                        .version("1.0.0")
+                        .description("""
+                    <h3>API para gestión hospitalaria</h3>
+                    <p>Documentación completa de los endpoints para:</p>
+                    <ul>
+                        <li>👨‍⚕️ Gestión de médicos</li>
+                        <li>👥 Gestión de pacientes</li>
+                        <li>📆 Gestión de atenciones médicas</li>
+                        <li>📊 Reportes y consultas especializadas</li>
+                    </ul>
+                    """)
                         .contact(new Contact()
-                                .name("Emilio Hormazabal")
+                                .name("Emilio Hormazabal - Ingeniería en Informática")
                                 .email("emi.hormazabal@duocuc.cl")
-                                .url("https://github.com/EmilioHormazabal/Hospital")
                         )
-                );
+                )
+                .externalDocs(new ExternalDocumentation()
+                        .description("Documentación completa")
+                        .url("https://github.com/EmilioHormazabal/Hospital"));
     }
 }

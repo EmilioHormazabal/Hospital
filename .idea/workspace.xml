@@ -6,6 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="65512605-2232-46a9-817d-65a6d81046a5" name="Changes" comment="Entrega prueba N3 FullStack: documentación Swagger, pruebas unitarias, configuración completa y soporte opcional para Docker.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/AtencionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/AtencionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/MedicoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/MedicoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/PacienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/PacienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/model/Atencion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/model/Atencion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/model/Medico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/model/Medico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/model/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/model/Paciente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/repository/MedicoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/repository/MedicoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/service/MedicoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/service/MedicoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/service/PacienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/service/PacienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/duoc/hospital/AtencionControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/duoc/hospital/AtencionControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/duoc/hospital/MedicoControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/duoc/hospital/MedicoControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/duoc/hospital/PacienteControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/duoc/hospital/PacienteControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +67,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -64,45 +78,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.AtencionControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.HospitalApplicationTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MedicoControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MedicoControllerTest.testDelete_ReturnsNoContent.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.hospital in hospital.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.java in hospital.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;Spring Boot.HospitalApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.build.tools.auto.reload&quot;: &quot;ALL&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.AtencionControllerTest.executor": "Run",
+    "JUnit.AtencionControllerTest.testFindByEstado_NoContent.executor": "Run",
+    "JUnit.AtencionControllerTest.testFindByEstado_ReturnsOk.executor": "Run",
+    "JUnit.HospitalApplicationTests.executor": "Run",
+    "JUnit.MedicoControllerTest.executor": "Run",
+    "JUnit.MedicoControllerTest.testDelete_ReturnsNoContent.executor": "Run",
+    "JUnit.hospital in hospital.executor": "Run",
+    "JUnit.java in hospital.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "Spring Boot.HospitalApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.build.tools.auto.reload": "ALL",
+    "settings.editor.selected.configurable": "build.tools",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlserver&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlserver"
     ]
   }
-}</component>
-  <component name="RunManager" selected="JUnit.hospital in hospital">
-    <configuration name="AtencionControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.HospitalApplication">
+    <configuration name="AtencionControllerTest.testFindByEstado_NoContent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hospital" />
       <extension name="coverage">
         <pattern>
@@ -112,6 +128,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.duoc.hospital" />
       <option name="MAIN_CLASS_NAME" value="com.duoc.hospital.AtencionControllerTest" />
+      <option name="METHOD_NAME" value="testFindByEstado_NoContent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HospitalApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hospital" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.duoc.hospital.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.duoc.hospital" />
+      <option name="MAIN_CLASS_NAME" value="com.duoc.hospital.HospitalApplicationTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -128,22 +160,6 @@
       <option name="PACKAGE_NAME" value="com.duoc.hospital" />
       <option name="MAIN_CLASS_NAME" value="com.duoc.hospital.MedicoControllerTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MedicoControllerTest.testDelete_ReturnsNoContent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hospital" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.duoc.hospital.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.duoc.hospital" />
-      <option name="MAIN_CLASS_NAME" value="com.duoc.hospital.MedicoControllerTest" />
-      <option name="METHOD_NAME" value="testDelete_ReturnsNoContent" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -186,11 +202,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.hospital in hospital" />
         <item itemvalue="JUnit.java in hospital" />
-        <item itemvalue="JUnit.MedicoControllerTest.testDelete_ReturnsNoContent" />
-        <item itemvalue="JUnit.AtencionControllerTest" />
+        <item itemvalue="JUnit.HospitalApplicationTests" />
         <item itemvalue="JUnit.MedicoControllerTest" />
+        <item itemvalue="JUnit.hospital in hospital" />
+        <item itemvalue="JUnit.AtencionControllerTest.testFindByEstado_NoContent" />
       </list>
     </recent_temporary>
   </component>
@@ -237,7 +253,7 @@
       <workItem from="1751258562961" duration="269000" />
       <workItem from="1751258860917" duration="527000" />
       <workItem from="1751261101641" duration="796000" />
-      <workItem from="1751261935084" duration="3203000" />
+      <workItem from="1751261935084" duration="9812000" />
     </task>
     <task id="LOCAL-00001" summary="Modificaciones actuales de proyecto Hospital, se ha integrado Swagger, documentacion api, etc.">
       <option name="closed" value="true" />
@@ -287,7 +303,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751266444439</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Entrega prueba N3 FullStack: documentación Swagger, pruebas unitarias, configuración completa y soporte opcional para Docker.">
+      <option name="closed" value="true" />
+      <created>1751267843722</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1751267843722</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

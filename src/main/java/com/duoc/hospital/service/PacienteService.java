@@ -132,4 +132,9 @@ public class PacienteService {
                     return pacienteRepository.save(pacienteActualizado);
                 });
     }
+    
+    // Metodo nuevo agregado
+    public Optional<Paciente> getPacienteById(int id) {
+        return pacienteRepository.findById(id);
+    }
 }

@@ -131,4 +131,11 @@ public class MedicoService {
                 });
     }
 
+    public List<Medico> findByAntiguedadExacta(int antiguedad) {
+        return medicoRepository.findByAntiguedadExacta(antiguedad);
+    }
+
+    public Optional<Medico> getMedicoById(int id) {
+        return medicoRepository.findById(id);
+    }
 }

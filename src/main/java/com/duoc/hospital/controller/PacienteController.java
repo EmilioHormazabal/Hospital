@@ -125,4 +125,25 @@ public class PacienteController {
         }
         return ResponseEntity.ok(pacientes);
     }
+    @GetMapping("/{id}/deuda")
+    @Operation(
+            summary = "Obtener deuda de paciente por ID",
+            description = "Recupera el monto de deuda asociado a un paciente específico"
+    )
+    @ApiResponses({
+            @ApiResponse(responseCode = "200", description = "Deuda obtenida exitosamente"),
+            @ApiResponse(responseCode = "404", description = "Paciente no encontrado")
+    })
+    public ResponseEntity<Integer> getDeudaById(
+            @Parameter(
+                    description = "ID del paciente",
+                    example = "1",
+                    required = true
+            )
+            @PathVariable int id
+    ) {
+        return pacienteService.getPacienteById(id)
+                .map(paciente -> ResponseEntity.ok(paciente.getDeuda()))
+                .orElse(ResponseEntity.notFound().build());
+    }
 }

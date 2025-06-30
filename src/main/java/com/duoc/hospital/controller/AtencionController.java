@@ -125,6 +125,27 @@ public class AtencionController {
         }
     }
 
+    @GetMapping("/estado/{estado}") // Nuevo endpoint para buscar por estado
+    @Operation(summary = "Buscar atenciones por estado", description = "Obtiene atenciones según un estado específico")
+    @ApiResponses({
+            @ApiResponse(responseCode = "200", description = "Atenciones obtenidas exitosamente"),
+            @ApiResponse(responseCode = "204", description = "No se encontraron atenciones con el estado especificado")
+    })
+    public ResponseEntity<List<Atencion>> findByEstado(
+            @Parameter(
+                    name = "estado",
+                    description = "Estado de la atención (ej. Pendiente, Realizada, Cancelada)",
+                    example = "Pendiente",
+                    required = true
+            )
+            @PathVariable String estado) {
+        List<Atencion> result = atencionService.findByEstado(estado);
+        if (result.isEmpty()) {
+            return ResponseEntity.noContent().build();
+        }
+        return ResponseEntity.ok(result);
+    }
+
     @PutMapping("/{id}")
     @Operation(summary = "Actualizar atención", description = "Actualiza los datos de una atención médica existente")
     @ApiResponses({
@@ -132,6 +153,7 @@ public class AtencionController {
             @ApiResponse(responseCode = "404", description = "Atención no encontrada"),
             @ApiResponse(responseCode = "400", description = "Datos inválidos")
     })
+
     public ResponseEntity<Atencion> update(@PathVariable Integer id, @RequestBody Atencion atencionActualizada) {
         Optional<Atencion> updated = atencionService.update(id, atencionActualizada);
         return updated.map(ResponseEntity::ok)
@@ -144,6 +166,7 @@ public class AtencionController {
             @ApiResponse(responseCode = "200", description = "Atención eliminada exitosamente"),
             @ApiResponse(responseCode = "404", description = "Atención no encontrada")
     })
+
     public ResponseEntity<Void> delete(@PathVariable Integer id) {
         if (atencionService.findById(id).isPresent()) {
             atencionService.deleteById(id);

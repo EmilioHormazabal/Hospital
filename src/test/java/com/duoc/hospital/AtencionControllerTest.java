@@ -92,4 +92,16 @@ class AtencionControllerTest {
         ResponseEntity<List<Atencion>> response = atencionController.findBetween("2025-06-01", "invalid-date");
         assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
     }
+    @Test
+    void testFindByEstado_ReturnsOk() {
+        when(atencionService.findByEstado("PAGADA")).thenReturn(List.of(new Atencion()));
+        ResponseEntity<List<Atencion>> response = atencionController.findByEstado("PAGADA");
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+    }
+    @Test
+    void testFindByEstado_NoContent() {
+        when(atencionService.findByEstado("PAGADA")).thenReturn(Collections.emptyList());
+        ResponseEntity<List<Atencion>> response = atencionController.findByEstado("PAGADA");
+        assertEquals(HttpStatus.NO_CONTENT, response.getStatusCode());
+    }
 }
