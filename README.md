@@ -36,15 +36,51 @@ spring.datasource.password=tu_contraseña
 
 mvn spring-boot:run
 
+🚀 Ejecución rápida con Docker (opcional y recomendado para pruebas)
+¿No quieres instalar Java, Maven ni MySQL? Usa Docker y tendrás todo listo en minutos.
+
+Requisitos previos
+Docker Desktop instalado y en ejecución.
+
+Pasos para levantar todo el sistema
+Clona este repositorio:
+
+bash
+git clone https://github.com/EmilioHormazabal/Hospital.git
+cd Hospital
+Ejecuta en la terminal:
+
+bash
+docker compose up --build
+Esto descargará las imágenes necesarias, construirá la app y levantará la base de datos MySQL y la API automáticamente.
+
+Espera a ver en los logs que la aplicación está corriendo en el puerto 8080.
+
+Accede a la aplicación:
+
+http://localhost:8080
+
+Documentación Swagger: http://localhost:8080/swagger-ui.html
+
+Para detener los contenedores:
+
+bash
+docker compose down
+Notas importantes
+No necesitas instalar Java, Maven ni MySQL: Todo corre dentro de los contenedores Docker.
+
+El primer arranque puede demorar porque Docker descarga las imágenes.
+
+Si tienes problemas con Docker Desktop: Verifica que esté ejecutándose y que la virtualización esté habilitada.
 
 ## Documentación de la API
 Accede a la documentación interactiva Swagger UI:
 
-http://localhost:8080/swagger-ui.html 
-o 
-http://TuIPV4:8080/swagger-ui/index.html
+http://localhost:8080/swagger-ui.html
 
-(Lo puedes saber escribiendo en tu terminal favorita, en mi caso PowerShell: ipconfig).
+o http://TuIPV4:8080/swagger-ui/index.html
+
+(Para saber tu IP, puedes usar: ipconfig en PowerShell o CMD).
 
 ## Endpoints principales
 | Módulo         | Endpoint                     | Funcionalidades |
@@ -76,26 +112,30 @@ GET /api/v1/atenciones/fecha?desde=2025-01-01&hasta=2025-12-31
 
 
 ## Características clave
-- ✅ Documentación completa con Swagger
-- ✅ Validación de datos (unicidad de RUN, correo, teléfono)
-- ✅ Manejo de zonas horarias (UTC/Chile)
-- ✅ Pruebas unitarias para todos los controladores
-- ✅ Inicialización automática de datos esenciales
-- ✅ Soporte para previsiones FONASA e ISAPRE
+✅ Documentación completa con Swagger
+
+✅ Validación de datos (unicidad de RUN, correo, teléfono)
+
+✅ Manejo de zonas horarias (UTC/Chile)
+
+✅ Pruebas unitarias para todos los controladores
+
+✅ Inicialización automática de datos esenciales
+
+✅ Soporte para previsiones FONASA e ISAPRE
 
 ## Estructura del proyecto
 
 src/
 ├── main/
-│ ├── java/
-│ │ ├── controller/ # Controladores REST
-│ │ ├── model/ # Entidades JPA
-│ │ ├── repository/ # Repositorios Spring Data
-│ │ ├── service/ # Lógica de negocio
-│ │ └── config/ # Configuración Swagger e inicialización
-│ └── resources/ # Archivos de configuración
-└── test/ # Pruebas unitarias.
-
+│   ├── java/
+│   │   ├── controller/    # Controladores REST
+│   │   ├── model/         # Entidades JPA
+│   │   ├── repository/    # Repositorios Spring Data
+│   │   ├── service/       # Lógica de negocio
+│   │   └── config/        # Configuración Swagger e inicialización
+│   └── resources/         # Archivos de configuración
+└── test/                  # Pruebas unitarias
 
 ## Contacto
 - **Desarrollador**: Emilio Hormazabal - Ingeniería en Informática.
