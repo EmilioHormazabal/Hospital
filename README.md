@@ -79,7 +79,7 @@ mvn spring-boot:run
 Accede a la documentación interactiva Swagger UI:
 
 - [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
-- o [http://TuIPV4:8080/swagger-ui/index.html](http://TuIPV4:8080/swagger-ui/index.html)
+- [http://TuIPV4:8080/swagger-ui/index.html](http://TuIPV4:8080/swagger-ui/index.html)
 
 (Para saber tu IP, puedes usar: `ipconfig` en PowerShell o CMD).
 
