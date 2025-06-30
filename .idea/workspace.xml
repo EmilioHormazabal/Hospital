@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65512605-2232-46a9-817d-65a6d81046a5" name="Changes" comment="Entrega prueba N3 FullStack: documentación Swagger, pruebas unitarias y configuración completa.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="65512605-2232-46a9-817d-65a6d81046a5" name="Changes" comment="Entrega prueba N3 FullStack: documentación Swagger, pruebas unitarias y configuración completa." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +79,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;Spring Boot.HospitalApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -234,6 +232,7 @@
       <workItem from="1751247954261" duration="92000" />
       <workItem from="1751248061390" duration="5995000" />
       <workItem from="1751254086985" duration="2062000" />
+      <workItem from="1751258562961" duration="269000" />
     </task>
     <task id="LOCAL-00001" summary="Modificaciones actuales de proyecto Hospital, se ha integrado Swagger, documentacion api, etc.">
       <option name="closed" value="true" />
