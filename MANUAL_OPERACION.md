@@ -15,8 +15,8 @@ Este manual describe los pasos para instalar, desplegar, operar y mantener el si
 
 2. **Clona el repositorio:**
 
-- git clone https://github.com/EmilioHormazabal/Hospital.git
-- cd Hospital
+``` git clone https://github.com/EmilioHormazabal/Hospital.git ```
+``` cd Hospital ```
 
 
 3. **Configura la base de datos:**
@@ -35,8 +35,8 @@ Este manual describe los pasos para instalar, desplegar, operar y mantener el si
 1. **Instala Docker Desktop** y asegúrate de que esté en ejecución.
 2. **Clona el repositorio:**
 
-- git clone https://github.com/EmilioHormazabal/Hospital.git
-- cd Hospital
+``` git clone https://github.com/EmilioHormazabal/Hospital.git ```
+``` cd Hospital ```
 
 3. **Levanta el sistema:**
 
