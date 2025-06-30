@@ -4,25 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65512605-2232-46a9-817d-65a6d81046a5" name="Changes" comment="Modificaciones actuales de proyecto Hospital, se ha integrado Swagger, documentacion api, etc.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/duoc/hospital/AtencionControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/duoc/hospital/MedicoControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/duoc/hospital/PacienteControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="65512605-2232-46a9-817d-65a6d81046a5" name="Changes" comment="Entrega prueba N3 FullStack: documentación Swagger, pruebas unitarias y configuración completa.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/AtencionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/AtencionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/MedicoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/MedicoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/PacienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/PacienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/service/AtencionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/service/AtencionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/service/MedicoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/service/MedicoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/service/PacienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/service/PacienteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/duoc/hospital/controller/AtencionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoc/hospital/controller/AtencionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/duoc/hospital/controller/MedicoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoc/hospital/controller/MedicoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/duoc/hospital/controller/PacienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoc/hospital/controller/PacienteController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/duoc/hospital/service/AtencionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoc/hospital/service/AtencionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/duoc/hospital/service/MedicoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoc/hospital/service/MedicoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/duoc/hospital/service/PacienteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoc/hospital/service/PacienteService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,19 +33,6 @@
         </map>
       </branch-storage>
     </excluded-from-favorite>
-    <favorite-branches>
-      <branch-storage>
-        <map>
-          <entry type="REMOTE">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="origin/Fullstack" />
-              </list>
-            </value>
-          </entry>
-        </map>
-      </branch-storage>
-    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
@@ -94,43 +64,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.AtencionControllerTest.executor": "Run",
-    "JUnit.HospitalApplicationTests.executor": "Run",
-    "JUnit.MedicoControllerTest.executor": "Run",
-    "JUnit.MedicoControllerTest.testDelete_ReturnsNoContent.executor": "Run",
-    "JUnit.hospital in hospital.executor": "Run",
-    "JUnit.java in hospital.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "Spring Boot.HospitalApplication.executor": "Run",
-    "git-widget-placeholder": "Main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.build.tools.auto.reload": "ALL",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.AtencionControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HospitalApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MedicoControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MedicoControllerTest.testDelete_ReturnsNoContent.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.hospital in hospital.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.java in hospital.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;Spring Boot.HospitalApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.build.tools.auto.reload&quot;: &quot;ALL&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.remoteExternalTools&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlserver"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.hospital in hospital">
     <configuration name="AtencionControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hospital" />
@@ -262,7 +232,7 @@
       <workItem from="1751067282309" duration="3993000" />
       <workItem from="1751071300485" duration="3766000" />
       <workItem from="1751247954261" duration="92000" />
-      <workItem from="1751248061390" duration="2675000" />
+      <workItem from="1751248061390" duration="5995000" />
     </task>
     <task id="LOCAL-00001" summary="Modificaciones actuales de proyecto Hospital, se ha integrado Swagger, documentacion api, etc.">
       <option name="closed" value="true" />
@@ -272,18 +242,72 @@
       <option name="project" value="LOCAL" />
       <updated>1750794940263</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Entrega prueba N3 FullStack: documentación Swagger, pruebas unitarias y configuración completa.">
+      <option name="closed" value="true" />
+      <created>1751250825330</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1751250825330</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Entrega prueba N3 FullStack: documentación Swagger, pruebas unitarias y configuración completa.">
+      <option name="closed" value="true" />
+      <created>1751250959072</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1751250959072</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -291,6 +315,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Modificaciones actuales de proyecto Hospital, se ha integrado Swagger, documentacion api, etc." />
-    <option name="LAST_COMMIT_MESSAGE" value="Modificaciones actuales de proyecto Hospital, se ha integrado Swagger, documentacion api, etc." />
+    <MESSAGE value="Entrega prueba N3 FullStack: documentación Swagger, pruebas unitarias y configuración completa." />
+    <option name="LAST_COMMIT_MESSAGE" value="Entrega prueba N3 FullStack: documentación Swagger, pruebas unitarias y configuración completa." />
   </component>
 </project>
