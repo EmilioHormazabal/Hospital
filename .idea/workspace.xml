@@ -6,20 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="65512605-2232-46a9-817d-65a6d81046a5" name="Changes" comment="Entrega prueba N3 FullStack: documentación Swagger, pruebas unitarias, configuración completa y soporte opcional para Docker.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/config/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/AtencionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/AtencionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/MedicoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/MedicoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/PacienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/controller/PacienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/model/Atencion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/model/Atencion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/model/Medico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/model/Medico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/model/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/model/Paciente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/repository/MedicoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/repository/MedicoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/service/MedicoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/service/MedicoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/service/PacienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoc/hospital/service/PacienteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/duoc/hospital/AtencionControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/duoc/hospital/AtencionControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/duoc/hospital/MedicoControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/duoc/hospital/MedicoControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/duoc/hospital/PacienteControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/duoc/hospital/PacienteControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,7 +240,7 @@
       <workItem from="1751258562961" duration="269000" />
       <workItem from="1751258860917" duration="527000" />
       <workItem from="1751261101641" duration="796000" />
-      <workItem from="1751261935084" duration="9812000" />
+      <workItem from="1751261935084" duration="10502000" />
     </task>
     <task id="LOCAL-00001" summary="Modificaciones actuales de proyecto Hospital, se ha integrado Swagger, documentacion api, etc.">
       <option name="closed" value="true" />
@@ -311,7 +298,23 @@
       <option name="project" value="LOCAL" />
       <updated>1751267843722</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Entrega prueba N3 FullStack: documentación Swagger, pruebas unitarias, configuración completa y soporte opcional para Docker.">
+      <option name="closed" value="true" />
+      <created>1751275373453</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1751275373453</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Entrega prueba N3 FullStack: documentación Swagger, pruebas unitarias, configuración completa y soporte opcional para Docker.">
+      <option name="closed" value="true" />
+      <created>1751275394644</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1751275394644</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
